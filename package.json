@@ -2,7 +2,9 @@
   "name": "3d-treasurehunt-ultimate",
   "version": "1.0.0",
   "scripts": {
-	  "dev": "vite"
+	  "dev": "vite",
+	  "build": "vite build",
+  	  "preview": "vite preview"
   },
   "dependencies": {
     "three": "^0.150.1"
