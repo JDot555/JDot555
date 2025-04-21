@@ -5,7 +5,11 @@ export function initScene() {
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
   camera.position.set(0, 2, 5);
 
-  const renderer = new THREE.WebGLRenderer();
+  const canvas = document.createElement('canvas');
+  const context = canvas.getContext('webgl');  // explicitly ask for WebGL1
+
+  const renderer = new THREE.WebGLRenderer({ canvas, context });
+
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
 
