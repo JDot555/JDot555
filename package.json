@@ -1,0 +1,13 @@
+{
+  "name": "3d-treasurehunt-ultimate",
+  "version": "1.0.0",
+  "scripts": {
+	  "dev": "vite"
+  },
+  "dependencies": {
+    "three": "^0.150.1"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
