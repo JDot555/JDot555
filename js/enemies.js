@@ -9,7 +9,7 @@ export function initEnemies(scene) {
   const loader = new GLTFLoader();
   playerObject = window.controls?.getObject();
 
-  loader.load('zombie.glb', gltf => {
+  loader.load('../public/zombie.glb', gltf => {
     for (let i = 0; i < 3; i++) {
       const zombie = gltf.scene.clone();
       zombie.position.set(Math.random() * 80 - 40, 0, Math.random() * 80 - 40);
